@@ -83,16 +83,14 @@ function generatePassword(lower, upper, number, symbol, length) {
 
 
 
-// Math.floor rounds decimals of math.random within fromCharCode function that invokes  ASCII table containing available characters. 26 is for 26 letters in alphabet, +97 because lowercase letters start at 97.
 function getRandomLower() {
     return String.fromCharCode(Math.floor(Math.random()*26) + 97);
 }
 
-// Math.floor rounds decimals of math.random within fromCharCode function that invokes  ASCII table containing available characters. 26 is for 26 letters in alphabet, +65 because uppercase letters start at 65.
 function getRandomUpper() {
     return String.fromCharCode(Math.floor(Math.random()*26) + 65);
 }
-// Same idea here for numbers.
+
 function getRandomNumber() {
     return String.fromCharCode(Math.floor(Math.random()*10) + 48);
 }
@@ -112,4 +110,3 @@ function writePassword() {
   passwordText.value = password;
 
 }
-
